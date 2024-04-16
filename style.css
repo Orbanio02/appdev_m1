@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;900&display=swap');
+
+:root {
+    --card-font: 'Lobster', cursive;
+    --body-font: 'Work Sans', sans-serif;
+    --bg-color: #dfd3c3;
+    --bg-image: url("img/bg1"); 
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--bg-color);
+    font-family: var(--body-font);
+    background: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--card-font);
+}
+
+
+/* card container code */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 25rem;
+    padding: 0rem 3rem;
+    border-radius: 30px;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.4990371148459384) 100%, rgba(240,236,227,1) 100%);
+    /* for js animation */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+/* card image code */
+.photo {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    width: 12rem;
+    border-radius: 50%;
+    z-index: 1;
+    margin: 2rem 0;
+    transform: all 0.75s ease-out;
+}
+
+.circle {
+    width: 15rem;
+    height: 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.2) 100%, rgba(240,236,227,1) 100%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    top: 215px;
+}
+
+.profile {
+    margin-top: 2rem;
+    transform: all 0.75s ease-out;
+}
+
+.profile button {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* card information code */
+.info {
+    text-align: center;
+}
+
+.info h1, h4 {
+    padding: 0 0 1rem 0;
+    transform: all 0.75s ease-out;
+}
+
+.social-icon {
+    padding: 0 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
